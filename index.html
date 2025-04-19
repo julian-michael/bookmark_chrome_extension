@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bookmark Extension</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      
+      
+
+        body {
+            background-color: rgb(216, 217, 217);
+            min-height: 600px;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #343a40;
+            height:40px;
+            width: 500px;
+            text-align: center;
+            font-size: 30px;
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+
+        }
+        .add-btn-class
+        {
+            display: flex;
+            width: 30px;
+            margin-right: 30px;
+            
+        }
+        .btn-add
+        {
+            margin-inline: 5% 10%;
+            padding: 10px 6px;
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+           
+        }
+    
+
+        .scroll-wrapper {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            border-top: 3px blue solid;
+            background-color: #dde4eb;
+            width: 500px;
+            padding: 3px;
+        }
+
+        #scrollBox {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            scroll-behavior: smooth;
+            border: 2px solid #ccc;
+            padding: 5px;
+            width: 500px;
+        }
+
+        #scrollBox::-webkit-scrollbar {
+            display: none;
+        }
+
+        #scrollBox {
+            -ms-overflow-style: none; /* Internet Explorer and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+
+        .btn {
+            margin-right: 10px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+      
+
+        .btn-add:hover,.btn:hover {
+            background-color: #0056b3;
+        }
+
+        .bb-1 {
+            width: 40px;
+            height: 40px;
+            background-color: #6c757d;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .bb-1:hover {
+            background-color: #5a6268;
+        }
+     
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <h5 class="navbar-brand"> Bookmark </h5>
+        </div>
+          <div class="add-btn-class">
+            <input type="button" class="btn-add" value="ADD">
+
+          </div>
+    </nav>
+
+    <div class="container">
+        <div class="scroll-wrapper">
+        
+   
+
+            <div id="scrollBox">
+                <input type="button" class="btn" value="Btn 1">
+                <input type="button" class="btn" value="Btn 2">
+                <input type="button" class="btn" value="Btn 3">
+                <input type="button" class="btn" value="Btn 4">
+                <input type="button" class="btn" value="Btn 5">
+                <input type="button" class="btn" value="Btn 6">
+                <input type="button" class="btn" value="Btn 7">
+                <input type="button" class="btn" value="Btn 8">
+                <input type="button" class="btn" value="Btn 9">
+                <input type="button" class="btn" value="Btn 10">
+                <input type="button" class="btn" value="Btn 11">
+                <input type="button" class="btn" value="Btn 12">
+                <input type="button" class="btn" value="Btn 13">
+                <input type="button" class="btn" value="Btn 14">
+                <input type="button" class="btn" value="Btn 15">
+                <input type="button" class="btn" value="Btn 16">
+            </div>
+
+         
+        </div>
+    </div>
+
+    <script src="script.js">
+    
+    </script>
+    
+</body>
+</html>

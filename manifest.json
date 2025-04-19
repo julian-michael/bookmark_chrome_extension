@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Your Extension Name",
+  "version": "1.0",
+  "description": "A simple Chrome extension",
+  "action": {
+    "default_popup": "index.html"
+    
+  },
+
+  "content_security_policy": {
+  "extension_pages": "script-src 'self'; object-src 'self';"
+},
+
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "css/bootstrap/css/bootstrap.css",
+        "css/all.min.css",
+        "webfonts/*"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
+
+
+
